@@ -1,0 +1,56 @@
+
+.rulang-label {
+  color: #19283C;
+  position: absolute;
+  display: inline-block;
+  height: auto;
+  text-align: center;
+  background: #FFF6F6;
+  border: 1px solid #19283C;
+  padding: 5px 5px 15px;
+  text-align: left;
+  z-index: 0;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+}
+.rulang-label:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  margin-left: -9px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 9px 15px 9px;
+  border-color: transparent transparent #FFF6F6 transparent;
+  z-index: 0;
+}
+.rulang-label:after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  margin-left: -10px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 10px 16px 10px;
+  border-color: transparent transparent #19283C transparent;
+  z-index: -1;
+}
+.rulang-highlight {
+  position: absolute;
+  display: inline-block;
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+.rulang-label > span {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  cursor: pointer;
+  user-select: none;
+}

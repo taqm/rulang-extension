@@ -1,0 +1,11 @@
+{
+  "name": "rulang-extension",
+  "version": "1.0.0",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  },
+  "scripts": {
+    "lint": "eslint ext",
+    "build": "npm run lint && mkdir -p build && zip build/rulang.zip ext -r"
+  }
+}
